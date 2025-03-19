@@ -1,0 +1,483 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurante à Venda - Oportunidade única para investir em um restaurante renomado com tradição e excelência.">
+  <title>Restaurante à Venda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    /* Estilos modernos e elegantes */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #e65100;
+    }
+    
+    .navbar-nav .nav-link {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #555;
+      margin-left: 1.2rem;
+      transition: color 0.3s;
+    }
+    
+    .navbar-nav .nav-link:hover {
+      color: #e65100;
+    }
+    
+    .hero {
+      position: relative;
+      background-image: url('images/madre-benvenuta.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Overlay escuro para realçar o texto */
+      z-index: 1;
+    }
+    
+    .hero .content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    
+    .btn-primary {
+      background-color: #e65100;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+    
+    .btn-primary:hover {
+      background-color: #d84315;
+    }
+    
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      color: #e65100;
+    }
+    
+    .about-us, .contact-info, .cta-section {
+      padding: 4rem 0;
+    }
+    
+    .about-us p, .contact-info p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #666;
+    }
+    
+    .cta-section {
+      background-color: #e65100;
+      color: #fff;
+      border-radius: 8px;
+      margin: 2rem 0;
+      padding: 3rem 1rem;
+    }
+    
+    .cta-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    
+    .cta-section p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .cta-section .btn {
+      background-color: #fff;
+      color: #e65100;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+    
+    .cta-section .btn:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .footer {
+      background-color: #333;
+      color: #ddd;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Restaurante</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">O Restaurante</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-info">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#venda">Venda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section id="hero" class="hero">
+    <div class="content container">
+      <h1 class="animate__animated animate__fadeInDown">Restaurante à Venda</h1>
+      <p class="animate__animated animate__fadeInUp">Adquira um restaurante renomado com tradição e excelência em atendimento.</p>
+      <a href="#venda" class="btn btn-primary animate__animated animate__pulse animate__infinite">Saiba Mais</a>
+    </div>
+  </section>
+  
+  <section id="about-us" class="about-us">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">O Restaurante</h2>
+      <p class="animate__animated animate__fadeInUp">
+        Nosso restaurante é sinônimo de tradição e qualidade. Fundado em 1983, conquistamos uma reputação sólida com uma culinária refinada e um ambiente acolhedor. Cada prato é elaborado com ingredientes selecionados e a dedicação de uma equipe experiente, garantindo uma experiência gastronômica única.
+      </p>
+    </div>
+  </section>
+  
+  <section id="contact-info" class="contact-info">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">Contato</h2>
+      <p class="animate__animated animate__fadeInUp">Para mais informações sobre a venda do restaurante, entre em contato:</p>
+      <p class="animate__animated animate__fadeInUp">Telefone: (XX) XXXX-XXXX</p>
+      <p class="animate__animated animate__fadeInUp">Email: contato@restaurante.com</p>
+      <p class="animate__animated animate__fadeInUp">Endereço: Bairro Santa Mônica - Florianópolis/SC</p>
+    </div>
+  </section>
+  
+  <section id="venda" class="cta-section">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeIn">Oportunidade de Investimento</h2>
+      <p class="animate__animated animate__fadeInUp text-center">
+        Invista em um negócio consolidado e promissor. Com uma marca forte e um potencial de crescimento elevado, este restaurante oferece uma oportunidade única para empreendedores visionários.
+      </p>
+      <a href="#contact-info" class="btn animate__animated animate__pulse animate__infinite">Entre em Contato</a>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 2ii Digital. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Smooth scroll para links da navbar
+    $('a.nav-link').on('click', function(e) {
+      if (this.hash !== "") {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $(this.hash).offset().top - 70
+        }, 800);
+      }
+    });
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurante à Venda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    /* Estilos personalizados */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .navbar-brand {
+      color: #e65100 !important;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+      margin-left: 1.5rem;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #e65100 !important;
+    }
+    .hero {
+      height: 100vh;
+      background: url('images/madre-benvenuta.jpg') no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 15px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .btn-custom {
+      background-color: #e65100;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #d84315;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      text-align: center;
+      color: #e65100;
+      margin-bottom: 2rem;
+    }
+    .section-content {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: #666;
+      text-align: center;
+    }
+    .cta-section {
+      background-color: #e65100;
+      color: #fff;
+      border-radius: 8px;
+      padding: 60px 20px;
+      margin: 40px 20px;
+    }
+    .footer {
+      background-color: #333;
+      color: #ddd;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Oportunidade</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero"><i class="bi bi-house"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">O Restaurante</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-info">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#venda">Venda</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-content container">
+      <h1 class="animate__animated animate__fadeInDown">Restaurante à Venda</h1>
+      <p class="animate__animated animate__fadeInUp">Adquira um restaurante renomado com tradição e excelência em atendimento.</p>
+      <a href="#venda" class="btn btn-custom animate__animated animate__pulse animate__infinite text-white">Saiba Mais</a>
+    </div>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="about-us" class="py-5">
+    <div class="container mt-5">
+      <h2 class="section-title animate__animated animate__fadeIn">O Restaurante</h2>
+      <p class="section-content animate__animated animate__fadeInUp">
+        Nosso restaurante é sinônimo de tradição e qualidade. Fundado em 1983, conquistamos uma reputação sólida com uma culinária refinada e um ambiente acolhedor. Cada prato é elaborado com ingredientes selecionados e a dedicação de uma equipe experiente, garantindo uma experiência gastronômica única.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contact-info" class="py-5">
+    <div class="container mt-5">
+      <h2 class="section-title animate__animated animate__fadeIn">Contato</h2>
+      <p class="section-content animate__animated animate__fadeInUp">Para mais informações sobre a venda do restaurante, entre em contato:</p>
+      <p class="section-content animate__animated animate__fadeInUp">Telefone: (XX) XXXX-XXXX</p>
+      <p class="section-content animate__animated animate__fadeInUp">Email: contato@restaurante.com</p>
+      <p class="section-content animate__animated animate__fadeInUp">Endereço: Bairro Santa Mônica - Florianópolis/SC</p>
+    </div>
+  </section>
+
+  <!-- Seção CTA -->
+  <div class="container py-5">
+    <div class="row justify-content-center my-5">
+      <div class="col-xs-12 col-lg-8">
+        <section id="venda" class="cta-section">
+            <div class="container text-center">
+            <h2 class="animate__animated animate__fadeIn">Oportunidade de Investimento</h2>
+            <p class="animate__animated animate__fadeInUp">
+                Invista em um negócio consolidado e promissor.<br />Com uma marca forte e um potencial de crescimento elevado, este restaurante oferece uma oportunidade única para empreendedores visionários.
+            </p>
+            <a href="#contact-info" class="btn btn-custom animate__animated animate__pulse animate__infinite text-white">Entre em Contato</a>
+            </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 2ii Digital. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Smooth scrolling para links internos -->
+  <script>
+    document.querySelectorAll('a.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+          const hash = this.hash;
+          document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
